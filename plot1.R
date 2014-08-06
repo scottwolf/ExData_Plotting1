@@ -12,7 +12,9 @@ data$datetime <- as.POSIXct(data$datetime, format="%Y-%m-%d %H:%M:%S")
 datasub <- subset(data, subset=(Date >= "2007-02-01" & Date <= "2007-02-02"))
 rm(data)
 
+
 # Plot1 code
+
 png(filename="plot1.png", width=480, height=480)
 
 hist(datasub$Global_active_power, main="Global Active Power", col = "Red",
